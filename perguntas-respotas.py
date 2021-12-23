@@ -21,14 +21,14 @@ def filmes(num):
                 17: f'Um {tema} que é uma boa adaptação de outra mídia (livro, HQ, jogo, música etc).', 
                 18: f'Um {tema} nostálgico para você.', 
                 19: f'Um bom {tema} de super-herói.', 
-                20: f'Um {tema} pelo qual se sente representado', 
+                20: f'Um {tema} pelo qual se sente representado.', 
                 21: f'Um {tema} que não cansa de assistir.', 
                 22: f'Um {tema} que te faz lembrar de alguém.', 
                 23: f'Um bom {tema} de drama.', 
                 24: f'Um bom {tema} de comédia.', 
                 25: f'Um bom {tema} de romance.', 
-                26: f'Um bom {tema} de suspense', 
-                27: f'Um bom {tema} de terror', 
+                26: f'Um bom {tema} de suspense.', 
+                27: f'Um bom {tema} de terror.', 
                 28: f'Um bom {tema} de ação.', 
                 29: f'Um bom {tema} de ficção científica.', 
                 30: f'Um bom {tema} em animação.'
@@ -71,11 +71,11 @@ while True:
         try:
             continuar = int(input(f"Digite: \n[1] para ver a próxima pergunta \n[2] para encerrar o programa \nSua resposta: "))
             break
-        except ValueError or (continuar != 1 and continuar != 2):
+        except ValueError:
             continue
         
     if continuar == 1:
-        filmes(randint(1, 11))
+        filmes(randint(1, 30))
     elif continuar == 2:
         break
 
