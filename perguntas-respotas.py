@@ -31,7 +31,8 @@ def filmes(num):
                 27: f'Um bom {tema} de terror.', 
                 28: f'Um bom {tema} de ação.', 
                 29: f'Um bom {tema} de ficção científica.', 
-                30: f'Um bom {tema} em animação.'
+                30: f'Um bom {tema} em animação.', 
+                31: f'Um {tema} que te decepcionou.'
                 }
     print(f"\n{estilo_texto['negrito']}{cor_texto['ciano']}{perguntas_filmes[num]}{estilo_texto['padrão']}\n")
 
@@ -75,7 +76,7 @@ while True:
             continue
         
     if continuar == 1:
-        filmes(randint(1, 30))
+        filmes(randint(1, 31))
     elif continuar == 2:
         break
 
