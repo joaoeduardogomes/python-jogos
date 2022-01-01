@@ -32,7 +32,21 @@ def filmes(num):
                 28: f'Um bom {tema} de ação.', 
                 29: f'Um bom {tema} de ficção científica.', 
                 30: f'Um bom {tema} em animação.', 
-                31: f'Um {tema} que te decepcionou.'
+                31: f'Um {tema} que te decepcionou.', 
+                32: f'Você desgosta de algum tipo de {tema}? Se sim, qual e por qual motivo?', 
+                33: f'Sobre {tema}s baseados em livros: você prefere ler o livro antes ou depois de assistir ao {tema}?', 
+                34: f'Um {tema} que você achou muito assustador.', 
+                35: f'Um {tema} que você achou muito enfgraçado.', 
+                36: f'Um famoso da indústria do cinema que você gostaria de conhecer.', 
+                37: 'Um ator de quem você gosta', 
+                38: f'Uma atriz de quem você gosta.', 
+                39: f'Você acha que {tema} podem desempenhar um papel educacional? Se puder, dê exemplos.', 
+                40: f'Um {tema} que você viu recentemente e gostou.', 
+                41: f'Você costuma comprar {tema}s?', 
+                42: f'Você gostaria de trabalhar com {tema}s?', 
+                43: f'Você prefere {tema}s em animação ou em live action?', 
+                44: f'Um {tema} com uma boa trilha sonora.', 
+                45: f'Na sua opinião, o que é um {tema} clássico?'
                 }
     print(f"\n{estilo_texto['negrito']}{cor_texto['ciano']}{perguntas_filmes[num]}{estilo_texto['padrão']}\n")
 
@@ -76,7 +90,7 @@ while True:
             continue
         
     if continuar == 1:
-        filmes(randint(1, 31))
+        filmes(randint(1, 45))
     elif continuar == 2:
         break
 
