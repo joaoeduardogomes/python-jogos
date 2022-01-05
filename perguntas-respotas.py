@@ -36,7 +36,7 @@ def filmes(num):
                 32: f'Você desgosta de algum tipo de {tema}? Se sim, qual e por qual motivo?', 
                 33: f'Sobre {tema}s baseados em livros: você prefere ler o livro antes ou depois de assistir ao {tema}?', 
                 34: f'Um {tema} que você achou muito assustador.', 
-                35: f'Um {tema} que você achou muito enfgraçado.', 
+                35: f'Um {tema} que você achou muito engraçado.', 
                 36: f'Um famoso da indústria do cinema que você gostaria de conhecer.', 
                 37: 'Um ator de quem você gosta', 
                 38: f'Uma atriz de quem você gosta.', 
