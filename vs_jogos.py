@@ -1,4 +1,5 @@
 from random import randrange
+from time import sleep
 
 def importa_jogos():
     arquivo = open("vs_jogos.txt", encoding = 'utf-8', mode = "r")
@@ -18,6 +19,11 @@ def mostra_mensagem():
     print("*" * tamanho)
     print(f"  {mensagem}")
     print("*" * tamanho)
+
+    criterios = ['jogabilidade', 'história', 'narrativa', 'construção de mundo', 'gráfico']
+
+    print(f"O critério é: {criterios[randrange(0, len(criterios))]}")
+    sleep(1)
 
 
 estilo_texto = {'padrão':'\033[0m',
@@ -100,6 +106,7 @@ while len(jogos) > 1:
         {jogos[a]} foi eliminado!
         {cor_texto['limpa']}""")
         jogos.pop(a)
+    sleep(1)
 
 
 print(f"O vencedor é: {estilo_texto['negrito']}{cor_texto['verde']}{jogos}{cor_texto['limpa']}")
